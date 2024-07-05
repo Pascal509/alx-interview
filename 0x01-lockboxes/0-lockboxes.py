@@ -3,12 +3,14 @@
 Lockboxes module
 """
 
+
 def canUnlockAll(boxes):
     """
     Determines if all the boxes can be opened.
 
     Args:
-        boxes (list of list of int): List of boxes where each box contains a list of keys.
+        boxes (list of list of int): List of boxes where each
+        box contains a list of keys.
 
     Returns:
         bool: True if all boxes can be opened, otherwise False.
@@ -26,4 +28,3 @@ def canUnlockAll(boxes):
                     stack.append(key)
 
     return len(opened) == num_boxes
-
